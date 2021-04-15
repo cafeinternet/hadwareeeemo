@@ -1,0 +1,238 @@
+
+body {
+  background-image: url("./tienda/FondoTienda.png");
+  background-attachment: scroll;
+ 
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+  font-family: 'JetBrains Mono', monospace;
+}
+
+
+:root {
+    font-size: calc(1vw + 1vh - 0.4vmin);
+    --blackColor: rgb(0, 0, 100);
+    --whiteColor: rgb(255, 255, 255);
+    --greyColor: rgb(229, 229, 229);
+    --yellowColor: rgb(238, 255, 1);
+    --blueColor: rgb(0, 1, 251);
+    --pinkColor: rgb(234, 20, 141);
+    --greenColor: rgb(4, 255, 4);
+  }
+
+ .banner {
+
+    grid-area: banner;
+    align-self: end;
+    height: 40px;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 27px;
+    color: red;
+    background-color: black;
+    text-shadow: 2px 1px grey;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    
+
+} 
+
+#boutique1{
+  margin-top:50px !important;
+}
+#boutique2{
+  margin-top:50px !important;
+
+  margin-left:20px !important;
+}
+.afiche-2{
+  position: relative;
+  top:200px;
+}
+.afiche-3{
+  position: relative;
+  top:100px;
+}
+.ItemWindow{
+    grid-area: item;
+    padding-top: 30px;
+    padding-left: 20px;
+ 
+  }
+
+  .how{
+    grid-area: description;
+    padding-left: 20px;
+  }
+  
+  .item-a {
+    grid-area: tienda;
+  
+  }
+
+  .tienda{
+      width: 1197px;
+  }
+
+  .vendedor {
+    position: absolute;
+    top: 13.5%;
+    left: 22%;
+    width: 1157px;
+    width: 1000px;
+}
+
+
+.laptops{
+    position: absolute;
+    right: 50%;
+    width: 200px;
+    top: 325px;
+
+    z-index: 99999;
+}
+
+.bot1{
+    display: inline-block ;
+    margin-left: 20%;
+    margin-right: 20% ;
+}
+
+.container {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 1fr 1197px 400px;
+    grid-template-rows: 100px 670px  ;
+    grid-template-areas: 
+      "description banner  item "
+      "description tienda item"
+      
+  }
+  
+
+
+  .login-button {
+    grid-area: botones1;
+    margin: 20px;
+
+    width: 14rem;
+    padding: 0.7rem;
+    margin: 1rem 20px 20px -1.9rem;
+    border-radius: 0;
+    color: var(--blueColor);
+    background-color: var(--whiteColor);
+    border: 0.22rem solid var(--blueColor);
+    -webkit-box-shadow: 0.2rem 0.2rem 0.2rem var(--blueColor);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--blueColor);
+  }
+  
+  
+  
+  .login-button:link,
+  .login-button:visited,
+  .login-button:hover,
+  .login-button:active {
+    color: var(--whiteColor);
+    background-color: var(--blueColor);
+    border: 0.22rem solid var(--blackColor);
+    -webkit-box-shadow: 0.2rem 0.2rem 0.2rem var(--blueColor);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--blueColor);
+    cursor: pointer;
+  }
+  
+  .login1-button:link,
+  .login1-button:visited,
+  .login1-button:hover,
+  .login1-button:active {
+    color: var(--whiteColor);
+    background-color: var(--pinkColor);
+    border: 0.22rem solid var(--pinkColor);
+    -webkit-box-shadow: 0.2rem 0.2rem 0.2rem var(--pinkColor);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--pinkColor);
+    cursor: pointer;
+  }
+  
+  .login1-button {
+    grid-area: botones2;
+    margin: 20px;
+
+    width: 14rem;
+    padding: 0.7rem;
+    margin: 1rem 20px 20px 0.1rem;
+    border-radius: 0;
+    color: var(--pinkColor);
+    background-color: var(--whiteColor);
+    border: 0.22rem solid var(--pinkColor);
+    -webkit-box-shadow: 0.2rem 0.2rem 0.2rem var(--pinkColor);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--pinkColor);
+  }
+  
+  .login2-button:link,
+  .login2-button:visited,
+  .login2-button:hover,
+  .login2-button:active {
+    color: var(--whiteColor);
+    border: 0.22rem solid var(--greenColor);
+    background-color: var(--greenColor);
+    -webkit-box-shadow: 0.2rem 0.2rem 0.2rem var(--greenColor);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--greenColor);
+    cursor: pointer;
+  }
+  
+  .login2-button {
+    grid-area: botones3;
+    margin: 20px;
+
+    width: 14rem;
+    padding: 0.7rem;
+    margin: 1rem 20px 20px 0.1rem;
+    border-radius: 0;
+    color: var(--greenColor);
+    background-color: var(--whiteColor);
+    border: 0.22rem solid var(--greenColor);
+    -webkit-box-shadow: 0.2rem 0.2rem 0.2rem var(--greenColor);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--greenColor);
+  }
+  
+  
+  
+.banner {
+
+    grid-area: banner;
+    align-self: end;
+    height: 40px;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 27px;
+    color: red;
+    background-color: black;
+    text-shadow: 2px 1px grey;
+    letter-spacing: 0.5rem;
+
+}
+
+.rotation{position: relative;
+    transform: rotate(270deg);
+    top: 120px;
+
+}
+
+#HungerBar{
+
+}
+
+
+
+.cartel{
+  position: absolute;
+  bottom: 0;
+  left:180px;
+}
+
+.info{
+  position: absolute;
+  z-index: 99999;
+  bottom: 90px;
+  left: 328px;
+    font-size: 17px;
+}
+
